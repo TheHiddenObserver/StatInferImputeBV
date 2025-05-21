@@ -17,9 +17,11 @@ This repository contains the **implementation code** and **research datasets** f
 
 ## Citation 
 
+If you use this code or data in your research, please cite our paper:
+
 **APA style:**
 
-Lin, Z., Huang, D., Xiong, Z., & Wang, H. (2025). Statistical inference for regression with imputed binary covariates with application to emotion recognition. The Annals of Applied Statistics, 19(1), 329-350.
+Lin, Z., Huang, D., Xiong, Z., & Wang, H. (2025). Statistical inference for regression with imputed binary covariates with application to emotion recognition. Annals of Applied Statistics, 19(1), 329-350.
 
 **BibTex**
 
