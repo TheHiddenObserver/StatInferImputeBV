@@ -12,7 +12,39 @@ This repository contains the **implementation code** and **research datasets** f
 
 **DOI**: [10.1214/24-AOAS1961](10.1214/24-AOAS1961)  
 
-**Preprint**: [arXiv:2408.09619](https://arxiv.org/abs/2408.09619) (optional)
+**Preprint**: [arXiv:2408.09619](https://arxiv.org/abs/2408.09619)
+
+## Data Architecture
+
+```markdown
+data/
+├── raw/ # Raw source data
+├── processed/ # Cleaned/preprocessed data
+├── splits/ # Data split files
+└── README_data.md # Detailed data documentation
+
+```
+
+## Code Architecture
+
+``` markdown
+codes/
+├── data_processing/    # Data processing modules
+├── models/              # Model implementations
+├── experiments/         # Experiment scripts
+├── utils/               # Utility functions
+└── requirements.txt     # Python dependencies
+```
+
+## Environment
+
+numpy==1.22.4
+
+pandas==1.4.2
+
+scikit-learn==1.1.1
+
+statsmodels==0.14.4
 
 
 ## Citation 
