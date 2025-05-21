@@ -5,17 +5,25 @@ This repository contains the **implementation code** and **research datasets** f
 
 ## Publication Information
 **Title**: Statistical inference for regression with imputed binary covariates with application to emotion recognition 
+
 **Authors**: Ziqian Lin, Danyang Huang, Ziyu Xiong, and Hansheng Wang
+
 **Venue**: Annals of Applied Statistics (2025)  
+
 **DOI**: [10.1214/24-AOAS1961](10.1214/24-AOAS1961)  
+
 **Preprint**: [arXiv:2408.09619](https://arxiv.org/abs/2408.09619) (optional)
 
 
 ## Citation 
+
 **APA style:**
+
 Lin, Z., Huang, D., Xiong, Z., & Wang, H. (2025). Statistical inference for regression with imputed binary covariates with application to emotion recognition. The Annals of Applied Statistics, 19(1), 329-350.
+
 **BibTex**
-'''
+
+```bibtex
 @article{lin2025statistical,
   title={Statistical inference for regression with imputed binary covariates with application to emotion recognition},
   author={Lin, Ziqian and Huang, Danyang and Xiong, Ziyu and Wang, Hansheng},
@@ -26,7 +34,7 @@ Lin, Z., Huang, D., Xiong, Z., & Wang, H. (2025). Statistical inference for regr
   year={2025},
   publisher={Institute of Mathematical Statistics}
 }
-'''
+```
 
 
 ## Contact
