@@ -14,37 +14,48 @@ This repository contains the **implementation code** and **research datasets** f
 
 **Preprint**: [arXiv:2408.09619](https://arxiv.org/abs/2408.09619)
 
-## Data Architecture
+## Data Description
 
 ```markdown
 data/
-├── raw/ # Raw source data
-├── processed/ # Cleaned/preprocessed data
-├── splits/ # Data split files
-└── README_data.md # Detailed data documentation
-
+├── data_full_final.csv   # The full data
+├── pilot_final.csv       # The pilot data
+├── W_pilot_final.npy     # The extracted feature vectors
+└── README.md             # Detailed data documentation
 ```
 
-## Code Architecture
+## Code Description
 
 ``` markdown
 codes/
-├── data_processing/    # Data processing modules
-├── models/              # Model implementations
-├── experiments/         # Experiment scripts
-├── utils/               # Utility functions
-└── requirements.txt     # Python dependencies
+├── calculate_weight.py  # Compute the optimal weights for weighted estimator
+├── cov_impute.py        # Compute the covariance estimator
+├── fit_model.py         # Fit the imputed and regression model
+├── real_data.ipynb      # Implementation using the demostrated data
+├── simulator.py         # Simulators for the algorithm
+└── utils.py             # Utility functions
+```
+
+## Quick Start
+
+You can run the demo notebook via
+
+```bash
+jupyter lab codes/real_data.ipynb
 ```
 
 ## Environment
 
+If your environment does not work, try the following version of dependencies:
+
+```markdown
+jupyter-client==7.3.4
+jupyter-core==4.10.0
 numpy==1.22.4
-
 pandas==1.4.2
-
 scikit-learn==1.1.1
-
 statsmodels==0.14.4
+```
 
 
 ## Citation 
