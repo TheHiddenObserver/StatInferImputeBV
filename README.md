@@ -1,7 +1,13 @@
 # [Statistical inference for regression with imputed binary covariates with application to emotion recognition] - Code and Data Repository
 
+## Overview
 
-This repository contains the **implementation code** and **research datasets** for the paper titled "Statistical inference for regression with imputed binary covariates with application to emotion recognition" published in Annals of Applied Statistics.
+This repository contains the **implementation code** and **research datasets** for the paper titled "Statistical inference for regression with imputed binary covariates with application to emotion recognition" published in Annals of Applied Statistics, including:
+
+- code for model estimation and inference,
+- example notebooks,
+- and the datasets used about livestream emotion analysis.
+
 
 ## Publication Information
 **Title**: Statistical inference for regression with imputed binary covariates with application to emotion recognition 
