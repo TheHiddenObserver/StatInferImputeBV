@@ -50,8 +50,37 @@ The dataset contains a total of 6,568 sample and 6 columns. This dataset onlys c
 - positive: *valance* of the live streamer's emotion, 1 for positive，0 otherwise (including neural and negative (binary variable)
 - strong: *arousal* of the live streamer's emotion, 1 for strong, 0 otherwise
 - positive_pre1: predicted probability of *valance* of the live streamer's emotion
-- strong_pre1: predicted probability of *arousal* of the live streamer's emotion
+- strong_pre1: predicted probability of *arousal* of the live streamer's emotion 
+
+## Data Collection and Annotation
+
+### Main Dataset
+
+The main dataset was constructed from 3,262 distinct Douyin automobile livestream sessions.
+Each livestream lasted between 30 and 150 minutes.
+For data construction, each livestream was segmented into non-overlapping 5-second intervals,
+resulting in a total of 2,744,173 livestream segments.
+
+Covariate information and raw audio data for each livestream segment were provided directly
+by the livestream service provider.
+
+### Pilot Dataset and Emotion Annotation
+
+The pilot dataset was obtained by randomly sampling segments from automobile livestreams.
+Each sampled segment was independently annotated by three domain experts with respect to
+two emotional dimensions: **valence** and **arousal**.
+The final emotion label for each segment was determined by majority vote across annotators.
+
+### Emotion Imputation
+
+Using the manually annotated emotion labels in the pilot dataset together with the corresponding
+audio data, a VGG16-based model was trained to impute emotion labels for unlabeled segments.
+As a result:
+
+- The columns `positive` and `strong` in the main dataset correspond to imputed emotion labels.
+- The columns `positive_pre1` and `strong_pre1` in the pilot dataset correspond to the model-based
+  predicted emotion labels.
 
 ## Contact
 
-If you have further questions, contact  Ziqian Lin ([linziqian@stu.pku.edu.cn](mailto:linziqian@stu.pku.edu.cn)) or Danyang Huang ([dyhuang89@126.com](mailto:dyhuang89@126.com))
+Due to storage constraints, the complete raw audio data are not publicly released through this repository. Access may be granted upon reasonable request. Please contact  Ziqian Lin ([linziqian@stu.pku.edu.cn](mailto:linziqian@stu.pku.edu.cn)) or Danyang Huang ([dyhuang89@126.com](mailto:dyhuang89@126.com)) for further information.
